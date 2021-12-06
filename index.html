@@ -9,9 +9,10 @@ function get_param(name){
 
 window.onload = function(){
 
-	var tit = decodeURIComponent((get_param("film").replace(/\+/g, '%20')));
-	document.title = tit;
-	document.getElementById("asw").innerHTML = "Stream/Download "+tit;
+	var params = decodeURIComponent((get_param("film").replace(/\+/g, '%20')));
+	document.title = params;
+	document.getElementById("judul").innerHTML = "Stream/Download "+params;
+	document.getElementById("link1").setAttribute("href", "https://www.youtube.com/results?search_query="+encodeURI(params));
 }
 
 </script>
@@ -23,14 +24,15 @@ window.onload = function(){
 <body>
 	<div class="container">
 	<center>
-		<h1 id="asw"></h1>
+		<h1 id="judul"></h1>
 		<div>
 			<a href="shopeeid://home?navRoute=eyJwYXRocyI6W3sid2ViTmF2Ijp7InVybCI6Imh0dHBzOi8vc2hvcGVlLmNvLmlkL3Nob3AvMTI0NTQ5OTk0P2FmX2NsaWNrX2xvb2tiYWNrPTdkJmFmX3JlZW5nYWdlbWVudF93aW5kb3c9N2QmYWZfc2l0ZWlkPWFuXzExMzk3ODIwMDYxJmFmX3N1Yl9zaXRlaWQ9LS0tLSZhZl92aWV3dGhyb3VnaF9sb29rYmFjaz0xZCZjPTZpZXNlMjdheW90My0zNTY4LXNlbGxlciZpc19yZXRhcmdldGluZz10cnVlJnBpZD1hZmZpbGlhdGVzJnV0bV9jYW1wYWlnbj02aWVzZTI3YXlvdDMtMzU2OC1zZWxsZXImdXRtX2NvbnRlbnQ9LS0tLSZ1dG1fbWVkaXVtPWFmZmlsaWF0ZXMmdXRtX3NvdXJjZT1hbl8xMTM5NzgyMDA2MSJ9fV19&af_click_lookback=7d&af_reengagement_window=7d&af_siteid=an_11397820061&af_sub_siteid=----&af_viewthrough_lookback=1d&c=6iese27ayot3-3568-seller&is_retargeting=true&pid=affiliates&utm_campaign=6iese27ayot3-3568-seller&utm_content=----&utm_medium=affiliates&utm_source=an_11397820061">
 				<img class="img-responsive" src="https://i.ibb.co/4VZp5zQ/FRAME-VIDEO.png">
 			</a>
 		</div>
 		<br><br>
-		<a href="shopeeid://home?navRoute=eyJwYXRocyI6W3sid2ViTmF2Ijp7InVybCI6Imh0dHBzOi8vc2hvcGVlLmNvLmlkL3Nob3AvMTI0NTQ5OTk0P2FmX2NsaWNrX2xvb2tiYWNrPTdkJmFmX3JlZW5nYWdlbWVudF93aW5kb3c9N2QmYWZfc2l0ZWlkPWFuXzExMzk3ODIwMDYxJmFmX3N1Yl9zaXRlaWQ9LS0tLSZhZl92aWV3dGhyb3VnaF9sb29rYmFjaz0xZCZjPTZpZXNlMjdheW90My0zNTY4LXNlbGxlciZpc19yZXRhcmdldGluZz10cnVlJnBpZD1hZmZpbGlhdGVzJnV0bV9jYW1wYWlnbj02aWVzZTI3YXlvdDMtMzU2OC1zZWxsZXImdXRtX2NvbnRlbnQ9LS0tLSZ1dG1fbWVkaXVtPWFmZmlsaWF0ZXMmdXRtX3NvdXJjZT1hbl8xMTM5NzgyMDA2MSJ9fV19&af_click_lookback=7d&af_reengagement_window=7d&af_siteid=an_11397820061&af_sub_siteid=----&af_viewthrough_lookback=1d&c=6iese27ayot3-3568-seller&is_retargeting=true&pid=affiliates&utm_campaign=6iese27ayot3-3568-seller&utm_content=----&utm_medium=affiliates&utm_source=an_11397820061" class="btn">Download Quality Video 480p</a>
+		<!-- <a href="shopeeid://home?navRoute=eyJwYXRocyI6W3sid2ViTmF2Ijp7InVybCI6Imh0dHBzOi8vc2hvcGVlLmNvLmlkL3Nob3AvMTI0NTQ5OTk0P2FmX2NsaWNrX2xvb2tiYWNrPTdkJmFmX3JlZW5nYWdlbWVudF93aW5kb3c9N2QmYWZfc2l0ZWlkPWFuXzExMzk3ODIwMDYxJmFmX3N1Yl9zaXRlaWQ9LS0tLSZhZl92aWV3dGhyb3VnaF9sb29rYmFjaz0xZCZjPTZpZXNlMjdheW90My0zNTY4LXNlbGxlciZpc19yZXRhcmdldGluZz10cnVlJnBpZD1hZmZpbGlhdGVzJnV0bV9jYW1wYWlnbj02aWVzZTI3YXlvdDMtMzU2OC1zZWxsZXImdXRtX2NvbnRlbnQ9LS0tLSZ1dG1fbWVkaXVtPWFmZmlsaWF0ZXMmdXRtX3NvdXJjZT1hbl8xMTM5NzgyMDA2MSJ9fV19&af_click_lookback=7d&af_reengagement_window=7d&af_siteid=an_11397820061&af_sub_siteid=----&af_viewthrough_lookback=1d&c=6iese27ayot3-3568-seller&is_retargeting=true&pid=affiliates&utm_campaign=6iese27ayot3-3568-seller&utm_content=----&utm_medium=affiliates&utm_source=an_11397820061" class="btn">Download Quality Video 480p</a> -->
+		<a id="link1" href="#" class="btn">Download Quality Video 480p</a>
 		<br><br>
 		<a href="shopeeid://home?navRoute=eyJwYXRocyI6W3sid2ViTmF2Ijp7InVybCI6Imh0dHBzOi8vc2hvcGVlLmNvLmlkL3Nob3AvMTI0NTQ5OTk0P2FmX2NsaWNrX2xvb2tiYWNrPTdkJmFmX3JlZW5nYWdlbWVudF93aW5kb3c9N2QmYWZfc2l0ZWlkPWFuXzExMzk3ODIwMDYxJmFmX3N1Yl9zaXRlaWQ9LS0tLSZhZl92aWV3dGhyb3VnaF9sb29rYmFjaz0xZCZjPTZpZXNlMjdheW90My0zNTY4LXNlbGxlciZpc19yZXRhcmdldGluZz10cnVlJnBpZD1hZmZpbGlhdGVzJnV0bV9jYW1wYWlnbj02aWVzZTI3YXlvdDMtMzU2OC1zZWxsZXImdXRtX2NvbnRlbnQ9LS0tLSZ1dG1fbWVkaXVtPWFmZmlsaWF0ZXMmdXRtX3NvdXJjZT1hbl8xMTM5NzgyMDA2MSJ9fV19&af_click_lookback=7d&af_reengagement_window=7d&af_siteid=an_11397820061&af_sub_siteid=----&af_viewthrough_lookback=1d&c=6iese27ayot3-3568-seller&is_retargeting=true&pid=affiliates&utm_campaign=6iese27ayot3-3568-seller&utm_content=----&utm_medium=affiliates&utm_source=an_11397820061" class="btn">Download Quality Video 720p</a>
 		<br><br>
